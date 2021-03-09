@@ -1,19 +1,22 @@
 
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu} = require('electron')
 
 let createWindow = () => {
 
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 625,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    titleBarStyle: 'hiddenInset'
   })
 
   mainWindow.loadFile('index.html')
 
 }
+
+Menu.setApplicationMenu(null)
 
 app.whenReady().then(createWindow)
 
