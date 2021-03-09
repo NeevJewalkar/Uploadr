@@ -1,0 +1,16 @@
+{
+  "name": "next-carriage-smile-jmcrr",
+  "productName": "next-carriage-smile-jmcrr",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "neev",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^11.3.0"
+  }
+}
